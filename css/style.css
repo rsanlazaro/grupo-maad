@@ -409,7 +409,7 @@ a.partner-logo:hover {
 
 .team-strip {
   display: grid;
-  grid-template-columns: repeat(4, 1fr);
+  grid-template-columns: repeat(3, 1fr);
   gap: 4px;
   flex: 1 1 auto;
   height: clamp(460px, 58vw, 640px);
@@ -562,9 +562,9 @@ a.partner-logo:hover {
   .section { padding: 64px var(--gutter); }
 
   .team-strip {
-    grid-template-columns: repeat(2, 1fr);
-    grid-template-rows: repeat(2, 1fr);
-    height: 640px;
+    grid-template-columns: 1fr;
+    grid-template-rows: repeat(3, 1fr);
+    height: 720px;
   }
   .team-name { font-size: 0.78rem; }
   .team-role { font-size: 0.7rem; }
