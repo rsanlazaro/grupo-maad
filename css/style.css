@@ -573,8 +573,24 @@ a.partner-logo:hover {
 
   .team-strip {
     grid-template-columns: 1fr;
-    grid-template-rows: repeat(3, 1fr);
-    height: 720px;
+    grid-template-rows: none;
+    height: auto;
+    gap: 16px;
+  }
+  .team-col {
+    flex-direction: column;
+  }
+  .team-col--top .team-label,
+  .team-col--bottom .team-label {
+    order: 1;
+  }
+  .team-col--top .team-photo-wrap,
+  .team-col--bottom .team-photo-wrap {
+    order: 0;
+  }
+  .team-photo-wrap {
+    flex: none;
+    aspect-ratio: 3 / 4;
   }
   .team-name { font-size: 0.78rem; }
   .team-role { font-size: 0.7rem; }
