@@ -409,7 +409,7 @@ a.partner-logo:hover {
 
 .team-strip {
   display: grid;
-  grid-template-columns: repeat(3, 1fr);
+  grid-template-columns: repeat(4, 1fr);
   gap: 4px;
   flex: 1 1 auto;
   height: clamp(460px, 58vw, 640px);
@@ -560,7 +560,11 @@ a.partner-logo:hover {
   .equipo { padding-left: var(--gutter); padding-right: var(--gutter); }
   .equipo-grid { flex-direction: column; align-items: stretch; }
   .equipo-copy { flex: none; max-width: none; margin-left: 0; }
-  .team-strip { height: clamp(420px, 90vw, 560px); }
+  .team-strip {
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(2, 1fr);
+    height: clamp(560px, 120vw, 760px);
+  }
 
   .site-footer {
     grid-template-columns: 1fr 1fr;
