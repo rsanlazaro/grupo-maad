@@ -409,10 +409,10 @@ a.partner-logo:hover {
 
 .team-strip {
   display: grid;
-  grid-template-columns: repeat(4, 1fr);
+  grid-template-columns: repeat(auto-fit, minmax(160px, 1fr));
   gap: 4px;
   flex: 1 1 auto;
-  height: clamp(460px, 58vw, 640px);
+  align-content: start;
 }
 .team-col {
   position: relative;
@@ -430,9 +430,8 @@ a.partner-logo:hover {
 
 .team-photo-wrap {
   position: relative;
-  flex: 1 1 auto;
+  aspect-ratio: 3 / 4;
   overflow: hidden;
-  min-height: 0;
 }
 .team-photo-wrap img,
 .team-photo-wrap .ph-person-4 {
@@ -560,11 +559,6 @@ a.partner-logo:hover {
   .equipo { padding-left: var(--gutter); padding-right: var(--gutter); }
   .equipo-grid { flex-direction: column; align-items: stretch; }
   .equipo-copy { flex: none; max-width: none; margin-left: 0; }
-  .team-strip {
-    grid-template-columns: repeat(2, 1fr);
-    grid-template-rows: repeat(2, 1fr);
-    height: clamp(560px, 120vw, 760px);
-  }
 
   .site-footer {
     grid-template-columns: 1fr 1fr;
@@ -577,8 +571,6 @@ a.partner-logo:hover {
 
   .team-strip {
     grid-template-columns: 1fr;
-    grid-template-rows: none;
-    height: auto;
     gap: 16px;
   }
   .team-col {
@@ -591,10 +583,6 @@ a.partner-logo:hover {
   .team-col--top .team-photo-wrap,
   .team-col--bottom .team-photo-wrap {
     order: 0;
-  }
-  .team-photo-wrap {
-    flex: none;
-    aspect-ratio: 3 / 4;
   }
   .team-name { font-size: 0.78rem; }
   .team-role { font-size: 0.7rem; }
